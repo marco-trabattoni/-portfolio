@@ -1,0 +1,217 @@
+body {
+ overflow: hidden;
+}
+
+
+#CASA {
+  display: block;
+}
+
+#LAVORI {
+  display: none;
+}
+
+
+.Containerlayout{
+  position: relative;
+  top: 100px;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  padding-left: 2px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a.elenco {
+text-decoration: none;
+color: black;
+}
+a.elenco:hover {
+text-decoration: underline;
+color: black;
+}
+
+article {
+  float: left;
+  width: 75%;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+div.containervideo {
+  position: relative;
+    left: 50px;
+    width: 80%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+right: 0;
+  height: 98.58%;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  color: black;
+}
+
+.containervideo:hover .overlay {
+  opacity: 0.9;
+}
+
+div.testointerno {
+position: relative;
+top: 9%;
+left: 6%;
+}
+
+/* Clear floats after the columns */
+.Containerlayout::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.test {
+padding: 28px;
+padding-top: 40px;
+color: white;
+}
+
+.titles {
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+
+.informationstitle {
+  font-size: 10px;
+  margin-bottom: 8px;
+  margin-top: 23px;
+}
+
+.txt {
+  font-weight: 200;
+}
+
+
+
+@media screen and (max-width: 435px) {
+
+
+  .coperta {
+    height: 100%;
+  }
+
+  body {
+   overflow: scroll;
+  }
+
+  #myworks {
+    display: block;
+    z-index: 1;
+    position: relative;
+    top: 75px;
+    width: 100%;
+    height: auto;
+    background: white;
+  }
+
+
+
+    .colonnefoto {
+      display: block;
+    }
+
+    .colonnefoto2 {
+      display: none;
+    }
+
+
+    .colonnefoto {
+      float: none;
+      width: 100%;
+    }
+
+    .coperta {
+      opacity: 1;
+    }
+
+
+
+
+    .test {
+    padding: 30px;
+    padding-left: 17pt;
+    padding-right: 17pt;
+    color: white;
+    }
+
+    .titles {
+      margin-bottom: 5px;
+      font-weight: 200;
+    }
+
+    .informationstitle {
+      display: none;
+    }
+
+    .txt {
+      font-weight: 200;
+      margin-bottom: 10pt;
+    }
+
+    .none {
+      display: none;
+    }
+
+    footer {
+                clear: both;
+                position: relative;
+                padding: 10px 14px 0px 10px;
+                top: 65pt;
+                width: 99.4%;
+                /* Height of the footer*/
+                height: 50px;
+                z-index: 51;
+    }
+
+.stranofooter {
+                clear: both;
+                position: fixed;
+                padding: 10px 14px 0px 10px;
+                bottom: 0;
+                top: auto;
+                width: 99.4%;
+                /* Height of the footer*/
+                height: 46px;
+                z-index: 51;
+                font-size: 12px;
+    }
+
+
+    .fixed {
+      position: fixed;
+      bottom: 0;
+      top: auto;
+    }
+
+
+}

@@ -1,0 +1,546 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Neue Haas Grotesk Display Pro 45 Light", Helvetica, Verdana, Tahoma, sans-serif;
+  /* --ff-secondary: 'Source Code Pro', monospace; */
+}
+
+
+
+.main{
+  width:36px;
+  height:36px;
+  border:1pt solid black;
+  position:absolute;
+  top:22pt; bottom:0; left:0;right:0;
+  margin:auto;
+  border-radius:50%;
+}
+
+.written{
+  width:150px;
+  height:50px;
+  position:absolute;
+  top:-25pt; bottom:0; left:0;right:0;
+  margin:auto;
+  text-align: center;
+}
+
+.circle{
+  width:10px;
+  height:10px;
+  background:white;
+  border-radius:50%;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 1.5s linear infinite;
+}
+
+@keyframes circle{
+  0%{
+    transform:rotate(0deg)
+              translate(-18px)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-18px)
+              rotate(-360deg);
+  }
+}
+
+
+
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    line-height: 1.6;
+    font-weight:400;
+    font-size: 14px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  padding: 21px 17px;
+  border-radius: 50%;
+  border: 0.2px hidden grey;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 0 #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.container:hover {
+  box-shadow: inset 0 0 0 1px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.icon {
+margin: 15px;
+margin-right: 27px;
+margin-top: 11px;
+}
+
+/* Border Fade
+.hvr-border-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+  box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px rgba(0, 0, 0, 0);
+}  */
+
+
+
+.bar1,  .bar3 {
+  width: 22px;
+  height: 2px;
+  background-color: black;
+  margin: 3.5px 0;
+  transition: 0.4s;
+  border-radius: 20%;
+}
+
+.bar3 {
+  width: 13px;
+  position: relative;
+  left: 9px;
+  }
+
+  .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-1.5px, 3px) scaleX(0.75);
+  transform: rotate(-45deg) translate(-1.5px, 3px) scaleX(0.80);
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-3.5px, 1.5px) scaleX(1.35384615);
+  transform: rotate(45deg) translate(-3.5px, 1.5px) scaleX(1.35384615);
+}
+
+
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+                                  /*border: 1px solid red;*/
+  position: fixed;
+  width: 100%;
+  z-index: 51;
+  background: white;
+}
+
+#home {
+  display: block;
+  z-index: 50;
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
+ background: white;
+}
+
+
+#myLinks {
+  display: none;
+  z-index: 50;
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
+  background: white;
+}
+
+.links {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.containerlinks {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+a.opzioni {
+color: black;
+float: left;
+padding: 15px;
+text-decoration: none;
+margin: 15px;
+box-sizing: border-box;
+}
+
+a.opzioni:hover {
+  color: red;
+}
+
+
+
+.topnav a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px;
+}
+
+/* Stile Logo */
+a.active {
+width: 200px;
+padding: 30px;
+padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+section.my-services {
+  position: relative;
+  top: 250px;
+}
+
+
+div.services {
+  clear: both;
+  border-top: 1px dashed black;
+  margin-left: 3%;
+  margin-right: 2.5%;
+  margin-bottom: 200px;
+}
+
+div.services2 {
+  clear: both;
+  border-top: 1px dashed black;
+  margin-left: 3%;
+  margin-right: 2.5%;
+}
+
+div.title {
+  float: left;
+  padding: 15px;
+  padding-left: 0px;
+  /*border: 1px solid green;*/
+}
+div.service {
+  float: left;
+  padding: 21px;
+  /*border: 1px solid green;*/
+  margin-left: 350px;
+}
+
+a.btn {
+  float: left;
+  padding: 15px;
+  /*border: 1px solid green;*/
+  margin-left: 100px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+
+
+#myworks {
+  display: block;
+  z-index: 1;
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  height: 91vh;
+ background: white;
+}
+
+
+.contenitorefoto {
+}
+
+
+
+
+/* Create two equal columns that floats next to each other */
+.colonnefoto {
+  float: left;
+  width: 20%;
+  height: 100%; /* Should be removed. Only for demonstration */
+  display: none;
+  position: relative;
+}
+
+.colonnefoto2 {
+  float: left;
+  width: 20%;
+  height: 100%; /* Should be removed. Only for demonstration */
+  display: block;
+  position: relative;
+}
+
+.coperta {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 101%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.coperta:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.contenitorefoto:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-height: 745px) {
+  .colonnefoto {
+    display: block;
+  }
+
+  .colonnefoto2 {
+    display: none;
+  }
+}
+
+
+.ProgettoSuccessivo {
+margin-top: 100pt;
+width: 100%;
+text-align: center;
+font-size: 13px;
+border-top: 1px solid black;
+transition: 0.3s;
+color: black;
+}
+
+.ProgettoSuccessivo:hover {
+background-color: black;
+color: white;
+}
+
+.nudo{
+  text-decoration: none;
+  z-index: 55;
+}
+
+.quadrato {
+width: 150px;
+height:  200px;
+border: 0px solid transparent;
+margin-left: auto;
+margin-right: auto;
+border-radius: 50%;
+transition: 0.4s;
+}
+
+.quadrato:hover {
+border: 0px solid transparent;
+}
+
+.intern {
+  margin-top: 35px;
+}
+
+
+.nextwhite {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
+
+
+
+
+
+
+
+footer {
+            clear: both;
+            position: fixed;
+            padding: 10px 14px 0px 10px;
+            bottom: 0;
+            width: 99.4%;
+            /* Height of the footer*/
+            height: 46px;
+            z-index: 51;
+            font-size: 12px;
+}
+
+.footer_left {
+  float: left;
+  padding-left: 30px;
+}
+
+
+
+a.footer__link {
+            float: right;
+            /* border: 3px solid red; */
+            text-decoration: none;
+            color: black;
+            padding: 0 15px;
+            font-size: 12px;
+
+}
+
+a.footer__link:hover {
+            text-decoration: underline;
+}
+
+
+.Piccola {
+  display: block;
+}
+
+.Grande {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 435px) {
+
+  .containerlinks {
+    width: 60%;
+  }
+
+
+
+  a.opzioni {
+    width: 38%;
+    margin: 6%;
+    text-align: center;
+
+  }
+
+
+  body {
+    font-size: 15px;
+  }
+
+
+
+  footer {
+    background-color: white;
+  }
+
+  .ProgettoSuccessivo:hover {
+  background-color: white;
+  color: black;
+  }
+
+
+
+
+    .Piccola {
+      display: none;
+    }
+
+    .Grande {
+      display: block;
+    }
+
+  .container:hover {
+    box-shadow: inset 0 0 0 0 #e1e1e1, 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .icon {
+  margin-right: 10pt;
+  }
+
+  a.active {
+  width: 200px;
+  padding: 30px;
+  padding-left: 17pt;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 410px) {
+
+  body {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 335px) {
+
+  body {
+    font-size: 12px;
+  }
+
+}

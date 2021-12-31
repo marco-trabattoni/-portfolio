@@ -1,0 +1,389 @@
+/*.workstitle {
+  position: relative;
+  top: 150px;
+  left: 48%;
+  font-size: 14px;
+  z-index: 1;
+}*/
+
+
+.totalcontainer {
+  position: relative;
+  top: 72px;
+  z-index: 1;
+}
+
+.videovideo {
+top: 12px;
+}
+
+.totalcontainerproblemi {
+  position: relative;
+  margin: 30px 0;
+}
+
+.tadpolecontainer {
+  z-index: 0;
+}
+
+.tadpolecontainer2 {
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 43px;
+}
+
+.tadpolecontainer2A {
+  z-index: 0;
+  margin-left: 60px;
+  margin-right: 90px;
+}
+
+.informations {
+  margin-left: 52px;
+  margin-top: 100px;
+  float: left;
+}
+
+.informations2 {
+  margin-left: 10%;
+  margin-top: 100px;
+  max-width: 530px;
+  float: left;
+}
+
+.totalcontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+
+
+.informationstitle {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.logoecolori {
+  margin-left: 52px;
+  float: left;
+  position:relative;
+  width: 86.5vw;
+  display: block;
+}
+
+.colori {
+  width:50%;
+}
+
+.logo {
+  float: left;
+  width:50%;
+}
+
+.colors2 {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.colors2:hover {
+  opacity: 1;
+}
+
+
+.row {
+  border-top: 1px solid black;
+  margin: 50px;
+  margin-top: 95px;
+  margin-right: 45px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  margin-top: 120px;
+  float: left;
+  width: 45%;
+  padding: 2px;
+  height: 180px; /* Should be removed. Only for demonstration */
+  z-index: 1;
+}
+
+.column1 {
+  margin-top: 120px;
+  float: left;
+  width: 45%;
+  padding: 2px;
+  height: 180px; /* Should be removed. Only for demonstration */
+  z-index: 1;
+  padding-right:30px;
+}
+
+.column2 {
+  margin-top: 120px;
+  float: left;
+  width: 45%;
+  padding: 2px;
+  height: 180px; /* Should be removed. Only for demonstration */
+  z-index: 1;
+padding-left:30px;
+}
+
+.Piccola {
+  display: block;
+}
+
+.Grande {
+  display: none;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.totalcontainerUX {
+  position: relative;
+  top: 65px;
+  margin: 0;
+  z-index: 0;
+}
+
+.tadpolecontainerUX {
+  z-index: 0;
+  max-height: 555px;
+  overflow: hidden;
+}
+.tadpole {
+  z-index: 0;
+}
+
+
+@media screen and (max-height: 745px) {
+
+  .tadpolecontainerUX {
+    z-index: 0;
+    max-height: none;
+  }
+
+}
+
+
+
+.buttons {
+width: 60px;
+border-radius: 50%;
+}
+
+.buttons:hover {
+border: 1px solid #e1e1e1;
+}
+
+
+.playervideo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  cursor: -webkit-image-set(
+    url("PlayButton.svg") 1x,
+    url("PlayButton.svg") 2x) 35 35, pointer;
+
+  cursor: image-set( "../img/video/PlayButton3.svg" 1x, "../img/video/PlayButton3.svg" 2x) 35 35, pointer;
+
+}
+
+.pauservideo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  cursor: -webkit-image-set(
+    url("PauseButton.svg") 1x,
+    url("PauseButton.svg") 2x) 35 35, pointer;
+
+  cursor: image-set( "../img/video/PauseButton.svg" 1x, "../img/video/PauseButton.svg" 2x) 35 35, pointer;
+
+}
+
+/*.copertabianca {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+}*/
+
+.playbutton {
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+  font-size: 13px;
+  padding: 25px 23px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+@media screen and (max-width: 435px) {
+
+  .relative {
+    position: relative;
+    top: 72px;
+  }
+
+
+  .totalcontainer {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+  }
+
+  .row {
+    border-top: 1px solid black;
+    margin: 17pt;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .margin{
+    margin-top: 95px;
+  }
+
+  .margin2{
+    margin-top: 78px;
+  }
+
+
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    margin-top: 50pt;
+    width: 100%;
+    padding: 2px;
+    height: auto; /* Should be removed. Only for demonstration */
+    z-index: 1;
+    padding-right:0px;
+  }
+
+
+  .column2 {
+    position: relative;
+    top: -68px;
+    margin-top: 0pt;
+    width: 100%;
+    padding: 2px;
+    height: auto; /* Should be removed. Only for demonstration */
+    z-index: 1;
+    padding-left:0px;
+  }
+
+
+  .Piccola {
+    display: none;
+  }
+
+  .Grande {
+    display: block;
+  }
+
+  .menospazio {
+    position: relative;
+    top: -45px;
+  }
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .totalcontainerproblemi {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .piuspazio {
+    margin-top: 60px;
+  }
+
+  .tadpolecontainer2A {
+    z-index: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tadpolecontainer2 {
+    z-index: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .menospazio2 {
+    position: relative;
+    top: 30px;
+  }
+
+
+  .logoecolori {
+    margin-left: 17pt;
+    margin-right: 17pt;
+    float: none;
+    position:relative;
+    display: block;
+  }
+
+  .colori {
+    margin-top: 20pt;
+    width:100%;
+    margin-bottom: 20pt;
+    position: relative;
+    left: -2pt;
+  }
+
+  .logo {
+    float: none;
+    width:100%;
+    margin-top: 10pt;
+  }
+
+  .totalcontainerUX {
+    position: relative;
+    top: 35px;
+    margin: 0;
+    z-index: 0;
+    margin-bottom: 122pt;
+  }
+
+
+  .informations {
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 80px;
+    float: none;
+  }
+
+  .informations2 {
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 50px;
+    float: none;
+  }
+
+}

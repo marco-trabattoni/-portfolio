@@ -1,0 +1,688 @@
+/*.workstitle {
+  position: relative;
+  top: 150px;
+  left: 48%;
+  font-size: 14px;
+  z-index: 1;
+}*/
+
+.totalcontainer {
+  position: relative;
+  top: 72px;
+  z-index: 1;
+}
+
+.totalcontainer2 {
+  position: relative;
+  top: 50px;
+  z-index: 1;
+}
+
+.totalcontainer3 {
+  position: relative;
+  z-index: 1;
+}
+
+.totalcontainerproblemi {
+  position: relative;
+  margin: 30px 0;
+}
+
+.tadpolecontainer {
+  z-index: 0;
+}
+
+.tadpolecontainer2 {
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 43px;
+  margin-top: 80px;
+}
+
+.tadpolecontainer3 {
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 43px;
+  margin-top: 18px;
+}
+
+.tadpolecontainer3b {
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 18px;
+}
+
+.tadpolecontainer4 {
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 150px;
+}
+
+.tadpolecontainer5 {
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 0px;
+}
+
+.tadpolecontainer6 {
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+.tadpolecontainer7 {
+  position: relative;
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+.tadpolecontainer8 {
+  position: relative;
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 90px;
+  cursor: pointer;
+}
+
+.tadpolecontainer9 {
+  position: relative;
+  z-index: 0;
+  margin-left: 50px;
+  margin-right: 65px;
+  margin-top: 90px;
+  cursor: pointer;
+}
+
+.tadpolecontainer13 {
+  position: relative;
+  z-index: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+
+.tadpolecontainer14 {
+  position: relative;
+  z-index: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 30pt;
+  cursor: pointer;
+}
+
+
+
+.informations {
+  margin-left: 52px;
+  margin-top: 100px;
+  float: left;
+}
+
+.informations2 {
+  margin-left: 10%;
+  margin-top: 100px;
+  float: left;
+}
+
+.totalcontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+.informationstitle {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.logoecolori {
+  margin-left: 52px;
+  float: left;
+  position:relative;
+}
+.colors {
+  width: 90%;
+  display: block;
+}
+
+.Piccola {
+  display: block;
+}
+
+.Grande {
+  display: none;
+}
+
+
+.colors2 {
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.colors2:hover {
+  opacity: 1;
+}
+
+
+.row {
+  border-top: 1px solid black;
+  margin: 50px;
+  margin-top: 95px;
+  margin-right: 45px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  margin-top: 120px;
+  float: left;
+  width: 45%;
+  padding: 2px;
+  height: 150px; /* Should be removed. Only for demonstration */
+  z-index: 1;
+}
+
+
+.column1 {
+  margin-top: 120px;
+  float: left;
+  width: 45%;
+  padding: 2px;
+  height: 180px; /* Should be removed. Only for demonstration */
+  z-index: 1;
+  padding-right:30px;
+}
+
+.column2 {
+  margin-top: 120px;
+  float: left;
+  width: 45%;
+  padding: 2px;
+  height: 180px; /* Should be removed. Only for demonstration */
+  z-index: 1;
+padding-left:30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.totalcontainerUX {
+  position: relative;
+  top: -20px;
+  margin: 0;
+  z-index: 0;
+}
+
+.tadpolecontainerUX {
+  z-index: 0;
+}
+.tadpole {
+  z-index: 0;
+}
+
+
+.signagex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.signagex:hover {
+  opacity: 1;
+}
+
+
+#fullimage {
+  display: none;
+  z-index: 60;
+  position: fixed;
+  top: 1px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+.titlediv {
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50.1%;
+  margin-top: 4%;
+}
+
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 58%;
+  margin-top: 4%;
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 37.4%;
+  margin-top: 4%;
+}
+
+.center4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 53%;
+  margin-top: 4%;
+}
+
+.center5 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 59%;
+  margin-top: 4%;
+}
+
+.slidescontainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 10px;
+  margin: 50px;
+  user-select: none;
+    border-radius: 50%;
+}
+
+.next {
+  right: 0;
+}
+
+.buttons {
+width: 60px;
+border-radius: 50%;
+}
+
+.buttons:hover {
+border: 1px solid #e1e1e1;
+}
+
+
+.close {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  padding: 5px;
+  margin: 20px;
+  user-select: none;
+}
+
+.hoverigno {
+position: relative;
+}
+
+.x {
+width: 60px;
+color: white;
+border-radius: 50%;
+}
+
+.x2 {
+width: 60px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 0;
+color: white;
+}
+
+.x2:hover {
+opacity: 1;
+}
+
+
+
+.imager {
+width: 65%;
+margin-right: 17.5%;
+margin-left: 17.5%;
+}
+
+
+#fullB {
+  display: none;
+  z-index: 60;
+  position: fixed;
+  top: 1px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+
+.tadpolecontainer8 a {
+  cursor: zoom-in;
+}
+
+.enlarge {
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 17.5%;
+  opacity: 0;
+  z-index: 4;
+  display: inherit;
+}
+.enlarge:hover {
+  opacity: 1;
+}
+
+
+.zeroM {
+  margin-top: 0px;
+}
+
+
+
+
+
+@media screen and (max-width: 435px) {
+
+  .enlarge {
+    display: none;
+  }
+
+  .relative {
+    position: relative;
+    top: 72px;
+  }
+
+  .totalcontainer {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+  }
+
+  .totalcontainer2 {
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+
+  .row {
+    border-top: 1px solid black;
+    margin: 17pt;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .margin{
+    margin-top: 80px;
+  }
+
+  .margin{
+    margin-top: 95px;
+  }
+
+
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    margin-top: 50pt;
+    width: 100%;
+    padding: 0px;
+    height: auto; /* Should be removed. Only for demonstration */
+    z-index: 1;;
+  }
+
+
+  .column2 {
+    position: relative;
+    top: -68px;
+    margin-top: 0pt;
+    width: 100%;
+    padding: 0px;
+    height: auto; /* Should be removed. Only for demonstration */
+    z-index: 1;
+  }
+
+  .menospazio {
+    position: relative;
+    top: -45px;
+  }
+
+  .menospazio3 {
+    position: relative;
+    top: -40px;
+  }
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .totalcontainerproblemi {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .piuspazio {
+    margin-top: 60px;
+  }
+
+  .piuspaziosotto {
+    margin-bottom: 60px;
+  }
+
+  .tadpolecontainer2A {
+    z-index: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tadpolecontainer2 {
+    z-index: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .menospazio2 {
+    position: relative;
+    top: 30px;
+  }
+
+
+  .logoecolori {
+    margin-left: 17pt;
+    margin-right: 17pt;
+    float: none;
+    position:relative;
+    display: block;
+  }
+
+  .mappa {
+margin-left: 17pt;
+margin-right: 17pt;
+    margin-top: 30pt;
+    margin-bottom: 0pt;
+  }
+
+
+  .colors {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+
+
+  .tadpolecontainer3 {
+    z-index: 0;
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 20pt;
+  }
+
+
+  .tadpolecontainer3b {
+    z-index: 0;
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 18pt;
+  }
+
+  .tadpolecontainer4 {
+    z-index: 0;
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 80px;
+  }
+
+  .tadpolecontainer5 {
+    z-index: 0;
+    margin-left: -1pt;
+    margin-right: 0;
+    margin-top: 20pt;
+  }
+
+  .tadpolecontainer6 {
+    z-index: 0;
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .tadpolecontainer8 {
+    position: relative;
+    z-index: 0;
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 60px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .tadpolecontainer9 {
+    position: relative;
+    z-index: 0;
+    margin-left: 17pt;
+    margin-right: 19pt;
+    margin-top: 25pt;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .tadpolecontainer10 {
+    position: relative;
+    z-index: 0;
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 25pt;
+    cursor: pointer;
+    margin-bottom: 150pt;
+  }
+
+  .imager {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  }
+
+
+
+
+.secondo {
+margin-top: 20pt;
+}
+
+  .Piccola {
+    display: none;
+  }
+
+  .Grande {
+    display: block;
+  }
+
+
+
+
+
+  .colori {
+    margin-top: 20pt;
+    width:100%;
+    margin-bottom: 20pt;
+  }
+
+  .logo {
+    float: none;
+    width:100%;
+    margin-top: 10pt;
+  }
+
+  .totalcontainerUX {
+    position: relative;
+    top: 60px;
+    margin: 0;
+    z-index: 0;
+    margin-bottom: 112pt;
+  }
+
+
+  .informations {
+    margin-left: 17pt;
+    margin-top: 80px;
+    float: none;
+  }
+
+  .informations2 {
+    margin-left: 17pt;
+    margin-top: 50px;
+    float: none;
+  }
+
+
+
+
+}
