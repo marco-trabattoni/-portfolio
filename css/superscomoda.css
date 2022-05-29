@@ -1,0 +1,100 @@
+.totalcontainerproblemi {
+  position: relative;
+  margin: 0px;
+  z-index: 0;
+}
+
+.standard {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.libretto {
+  margin-right: 123px;
+}
+
+.book {
+margin-bottom: 45px;
+}
+
+.totalcontainerZ {
+  position: relative;
+  top: 0px;
+}
+
+
+.immaginebordi {
+margin-right: 50px;
+margin-left: 50px;
+}
+
+.margini {
+margin-right: 40px;
+margin-left: 40px;
+}
+
+.columnS {
+  float: left;
+  width: 21.2%;
+  padding-right: 0.5%;
+}
+
+.columnR {
+  float: left;
+  width: 21.2%;
+  padding-left: 0.5%;
+}
+
+.columno {
+  float: left;
+  width: 56.6%;
+}
+
+
+.columnQ {
+  float: left;
+  width: 50%;
+  padding-left: 0.5%;
+}
+
+
+.column3 {
+  float: left;
+  width: 25%;
+  padding-right: 0.5%;
+}
+
+
+.m3 {
+margin-right: 45px;
+}
+
+
+/* Clearfix (clear floats) */
+.rowS::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.zoomer {
+  cursor: -webkit-image-set(
+    url("Zoom.svg") 1x,
+    url("Zoom.svg") 2x) 35 35, pointer;
+
+}
+
+.zoomer2 {
+  cursor: url('Zoom copia.svg') 37 37,auto;
+}
+
+.bottom {
+  margin-bottom: 120px;
+}
+
+
+@media screen and (max-height: 745px) {
+  .videovideo {
+  top: 15px;
+  }
+}
