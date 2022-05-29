@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.ProgettoSuccessivo {
+margin-top: 0pt;
+border-top: 1px solid transparent;
+}
+
+
+
+.pastacontainer {
+  position: relative;
+  top: 75px;
+  z-index: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.informations {
+  margin-left: 52px;
+  margin-top: 168px;
+  float: left;
+}
+
+.informations2 {
+  margin-left: 10%;
+  margin-top: 168px;
+  max-width: 660px;
+  float: left;
+}
+
+@media screen and (max-height: 745px) {
+
+
+  .informations{
+    margin-top: 180px;
+  }
+  .informations2{
+    margin-top: 180px;
+  }
+
+}
+
+
+
+
+.body {
+  margin-top: 175px;
+    height: 104vh;
+    width: 100%;
+    background-color: #E52521;
+    position: relative;
+}
+
+.body2 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Book */
+.book {
+    position: relative;
+    top: 17.8vh;
+    width: 380px;
+    height: 500px;
+    transition: transform 0.8s;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    transition: transform 0.8s;
+}
+
+.front {
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    -webkit-transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    -webkit-transform: rotateY(-180deg);
+    transition: transform 0.8s;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+
+#prev-btn {
+  position: absolute;
+  left: 230px;
+  top: 44.5vh;
+
+}
+
+#next-btn {
+position: absolute;
+right: 230px;
+top: 44.5vh;
+}
+
+
+
+@media screen and (max-height: 745px) {
+
+  .book {
+      position: relative;
+      top: 15.9vh;
+  }
+
+  #prev-btn {
+    top: 45.5vh;
+
+  }
+
+  #next-btn {
+  top: 45.5vh;
+  }
+
+}
+
+
+
+
+
+.contenitorebuttons {
+position: relative;
+}
+
+.buttons0 {
+width: 60px;
+border-radius: 50%;
+}
+
+
+.buttons2 {
+width: 60px;
+border-radius: 50%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 0;
+z-index: 3;
+transition: 0.3s;
+}
+
+.buttons2:hover {
+opacity: 1;
+}
+
+
+
+#p1 {
+    z-index: 13;
+}
+
+#p2 {
+    z-index: 12;
+}
+
+#p3 {
+    z-index: 11;
+}
+
+#p4 {
+    z-index: 10;
+}
+
+#p5 {
+    z-index: 9;
+}
+
+#p6 {
+    z-index: 8;
+}
+
+#p7 {
+    z-index: 7;
+}
+
+#p8 {
+    z-index: 6;
+}
+
+#p9 {
+    z-index: 5;
+}
+
+#p10 {
+    z-index: 4;
+}
+
+#p11 {
+    z-index: 3;
+}
+
+#p12 {
+    z-index: 2;
+}
+
+#p13 {
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 435px) {
+
+  footer {
+    background-color: initial;
+  }
+
+
+  .informations {
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 80px;
+    float: none;
+  }
+
+  .informations2 {
+    margin-left: 17pt;
+    margin-right: 17pt;
+    margin-top: 50px;
+    float: none;
+  }
+
+  .pastacontainer {
+    position: relative;
+    top: 70px;
+    z-index: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 80pt;
+  }
+
+
+  .body {
+    margin-top: 175px;
+      height: 100vh;
+      width: 100%;
+      background-color: #E52521;
+      position: relative;
+  }
+
+  /* Book */
+  .book {
+      position: relative;
+      top: 184pt;
+      width: 190px;
+      height: 246px;
+      transition: transform 0.8s;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 0;
+  }
+
+
+
+  #prev-btn {
+    position: absolute;
+    left: 0pt;
+    top: 184pt;
+z-index: 20;
+  }
+
+  #next-btn {
+  position: absolute;
+  right: 0pt;
+  top: 184pt;
+  z-index: 20;
+  }
+
+  .contenitorebuttons {
+  position: relative;
+  height: 155px;
+  }
+
+  .buttons0 {
+  width: 60px;
+  border-radius: 50%;
+  margin-top: 70pt;
+  }
+
+  .buttons2 {
+  display: none;
+  }
+
+
+}
